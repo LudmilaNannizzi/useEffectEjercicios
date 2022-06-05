@@ -1,4 +1,4 @@
-import { Button, Flex } from "@chakra-ui/react";
+import { Box, Button, Flex, Text } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
 
 const Contador = () => {
@@ -11,11 +11,11 @@ const Contador = () => {
 
   const bgChange = () => {
     if (count < 0) {
-      setBgColor("red");
+      setBgColor("#e63946");
     } else if (count > 0) {
-      setBgColor("blue");
+      setBgColor("#457b9d");
     } else {
-      setBgColor("white");
+      setBgColor("#f1faee");
     }
   };
 
@@ -25,17 +25,20 @@ const Contador = () => {
   }, [count]);
 
   return (
-    <div style={style}>
-      <h1> Hiciste {count} clicks</h1>
+    //   <div style={style}>
+    <Box m="50px auto" style={style} w="300px" h="200px">
+      <Text fontSize="6xl" textAlign="center">
+        {count}{" "}
+      </Text>
       <div>
-        <div>{count}</div>
-        <Flex>
+        <Flex justifyContent="center">
           <Button onClick={() => setCount(count + 1)}> + </Button>
           <Button onClick={() => setCount(0)}> R </Button>
           <Button onClick={() => setCount(count - 1)}> - </Button>
         </Flex>
       </div>
-    </div>
+    </Box>
+    //    </div>
   );
 };
 export default Contador;

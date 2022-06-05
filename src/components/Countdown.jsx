@@ -1,3 +1,4 @@
+import { Text } from "@chakra-ui/react";
 import { useState, useEffect } from "react";
 
 const Countdown = ({ value }) => {
@@ -19,7 +20,7 @@ const Countdown = ({ value }) => {
 
   return (
     <div>
-      <h1> {count === 0 ? "Finalizo el tiempo" : count} </h1>
+      <Text fontSize="2xl"> {count === 0 ? "Finalizo el tiempo" : count} </Text>
     </div>
   );
 };

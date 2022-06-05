@@ -16,7 +16,7 @@ const Form = () => {
 
   return (
     <div>
-      <FormControl w="40%" mx="auto">
+      <FormControl w="40%" m="50px auto">
         <FormLabel htmlFor="email">Email address</FormLabel>
         <Input
           id="email"
