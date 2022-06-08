@@ -3,6 +3,7 @@ import Contador from "./components/Contador";
 import Form from "./components/Form";
 import InputContador from "./components/InputContador";
 import Reloj from "./components/Reloj";
+import Cards from "./components/componentsApi/Cards";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Form />
       <Reloj />
       <InputContador />
+      <Cards></Cards>
     </Box>
   );
 }

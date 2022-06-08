@@ -25,7 +25,6 @@ const Contador = () => {
   }, [count]);
 
   return (
-    //   <div style={style}>
     <Box m="50px auto" style={style} w="300px" h="200px">
       <Text fontSize="6xl" textAlign="center">
         {count}{" "}
@@ -38,7 +37,6 @@ const Contador = () => {
         </Flex>
       </div>
     </Box>
-    //    </div>
   );
 };
 export default Contador;
